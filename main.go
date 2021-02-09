@@ -35,8 +35,8 @@ func main() {
 // runWeb start http server
 func runWeb(ctx *cli.Context) {
 	go metrics.WorkflowsCache()
-	go metrics.GetRunnersFromGithub()
-	go metrics.GetRunnersOrganizationFromGithub()
+	// go metrics.GetRunnersFromGithub()
+	// go metrics.GetRunnersOrganizationFromGithub()
 	go metrics.GetJobsFromGithub()
 	go metrics.GetBillableFromGithub()
 
